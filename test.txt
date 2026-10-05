@@ -1,0 +1,41 @@
+Attention Is All You Need
+
+"Attention Is All You Need" is a landmark research paper published in 2017 by Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+
+The paper introduced the Transformer architecture, a neural network model designed for sequence-to-sequence tasks such as machine translation. Unlike previous recurrent neural networks (RNNs) and long short-term memory (LSTM) models, the Transformer relies entirely on attention mechanisms, removing the need for recurrence and convolution.
+
+The key innovation is the self-attention mechanism, which allows every token in a sequence to attend to every other token. This enables the model to capture long-range dependencies efficiently while allowing parallel computation during training.
+
+The Transformer consists of an encoder-decoder architecture. The encoder processes the input sequence, while the decoder generates the output sequence one token at a time. Both encoder and decoder are built using stacked layers containing multi-head self-attention and position-wise feed-forward neural networks.
+
+Since the Transformer has no recurrence, positional encodings are added to the input embeddings to provide information about the order of tokens. These positional encodings can be learned or computed using sinusoidal functions.
+
+The paper demonstrated state-of-the-art performance on machine translation benchmarks, including the WMT 2014 English-to-German and English-to-French translation tasks. The Transformer achieved higher accuracy while requiring significantly less training time than previous architectures.
+
+The concepts introduced in "Attention Is All You Need" became the foundation for modern large language models such as BERT, GPT, T5, LLaMA, and many other Transformer-based models used in natural language processing and beyond.
+
+Key concepts from the paper include:
+- Self-attention
+- Multi-head attention
+- Positional encoding
+- Encoder-decoder architecture
+- Feed-forward neural networks
+- Residual connections
+- Layer normalization
+- Scaled dot-product attention
+
+The scaled dot-product attention is computed using the formula:
+
+Attention(Q, K, V) = softmax((QKᵀ) / √dₖ) V
+
+where:
+- Q represents the query matrix.
+- K represents the key matrix.
+- V represents the value matrix.
+- dₖ is the dimension of the key vectors.
+
+The significance of the paper lies in its simplicity and scalability. Nearly all modern generative AI systems, including ChatGPT and other large language models, are based on the Transformer architecture introduced in this paper.
+
+Summary:
+"Attention Is All You Need" introduced the Transformer architecture, replacing recurrent neural networks with self-attention mechanisms. The model trains faster, captures long-range dependencies more effectively, and serves as the foundation of today's large language models.
+
